@@ -1,0 +1,18 @@
+system:
+  # Parallelization settings
+  parallel_requests: null  # CPU count - 1
+  parallel_attempts: null  # CPU count - 1
+  
+  # Batching settings
+  batch_size: 10   # Number of items to process in each batch
+  buffer_size: 1000 # Size of I/O buffer
+  
+  # Tree search optimization
+  max_tree_depth: 5  # Maximum depth to explore in tree search
+  prune_threshold: 0.3  # Score below which to prune branches
+  max_siblings: 10  # Maximum number of siblings to explore
+  
+  # Memory management
+  max_memory_pct: 80  # Maximum memory usage percentage
+  cache_ttl: 3600  # Cache time-to-live in seconds
+  cleanup_interval: 1000  # Cleanup every N operations
